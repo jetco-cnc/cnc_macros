@@ -24,7 +24,7 @@ With my current macro.cnc file, a tool change M6 command will:
 # MACROS Folder
 This folder contains a few items:
 - Default Eding CNC macro.cnc to use as a guide/template
-- Spindle PWM compensation table for Mafell FM1000 PV-WS 230V/50 Hz router
+- Spindle PWM compensation table for Spinogy X22 220V 2 pole spindle
 - Latest macro files
   - Rename the file to "macro.cnc" and "user_macro.cnc" and place in your "CNC4.03" directory on the C: drive
 
