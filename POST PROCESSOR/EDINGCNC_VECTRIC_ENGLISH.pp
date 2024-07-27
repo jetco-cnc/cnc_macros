@@ -12,16 +12,16 @@
 + ========      ===========  ================================
 + DJ-Bino       23/12/2013   PP written
 
-+ MiniClubbin   19/12/2022   Translated to English, trimmed "new segment" lines to speed up gcode
-+ MiniClubbin   21/12/2022   REMOVED G54 from HEADER block to allow for multiple work offsets
-+ MiniClubbin   21/12/2022   Commented out M07 commands
-+ MiniClubbin   27/12/2022   Adjusted footer: reordered M5/M9, commented out G28
-+ MiniClubbin   17/06/2022   Uncommented G28, M07, added MCSZ0 in footer
-+ MiniClubbin   17/07/2023   Removed "Zero Position" block from header
-+ MiniClubbin   17/08/2023   Added subroutine reference for auto probing CUTOUT
-+ MiniClubbin   17/08/2023   Removed G43 Hxx from tool change
-+ MiniClubbin   21/09/2023   Added M08 to programs to start chiller for spindle
-+ MiniClubbin   12/2023     Eding V5 revamp - Removed material comments from header, added log messages
++ JETCO_CNC   19/12/2022   Translated to English, trimmed "new segment" lines to speed up gcode
++ JETCO_CNC   21/12/2022   REMOVED G54 from HEADER block to allow for multiple work offsets
++ JETCO_CNC   21/12/2022   Commented out M07 commands
++ JETCO_CNC   27/12/2022   Adjusted footer: reordered M5/M9, commented out G28
++ JETCO_CNC   17/06/2022   Uncommented G28, M07, added MCSZ0 in footer
++ JETCO_CNC   17/07/2023   Removed "Zero Position" block from header
++ JETCO_CNC   17/08/2023   Added subroutine reference for auto probing CUTOUT
++ JETCO_CNC   17/08/2023   Removed G43 Hxx from tool change
++ JETCO_CNC   21/09/2023   Added M08 to programs to start chiller for spindle
++ JETCO_CNC   12/2023     Eding V5 revamp - Removed material comments from header, added log messages
 
 +=======================================================
 
