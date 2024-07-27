@@ -23,9 +23,10 @@
 + MiniClubbin   21/09/2023   Added M08 to programs to start chiller for spindle
 + MiniClubbin   12/2023     Eding V5 revamp - Removed material comments from header, added log messages
 
+
 +=======================================================
 
-POST_NAME = "EDINGCNC 3 (*.nc)"
+POST_NAME = "EDINGCNC ZHC 3 (*.nc)"
 
 FILE_EXTENSION = "NC"
 
@@ -78,7 +79,6 @@ VAR DWELL_TIME = [DWELL|A|P|1.2]
 +---------------------------------------------------
 
 begin HEADER
-" ( !!! NO ZHC CHECK !!! ) "
 " ( First Tool [T]: [TOOLNAME] ) "
 " #4004=[ZLENGTH] "
 " (goSub PROBE_CUTOUT_AUTO) "
@@ -100,14 +100,14 @@ begin HEADER
 " ( Spindle Speed: [S] RPM )"
 
 " G00 G53 Z0"
-" Msg[34] ***INSERT TOOL T[T] [TOOLNAME] [34] "
+" Msg [34] INSERT TOOL T[T] [TOOLNAME] [34] "
 " T[T] M06"
 " LogMsg %d [34] TOOLCHANGE-Program: [TP_FILENAME] Tool [T] [TOOLNAME][34] "
+" goSUB ZHC_CHECK "
 " M08"
 " [S] M03"
 " Msg[34] T[T]: [TOOLNAME] [34] "
 " Msg[34] Toolpath: [TOOLPATH_NAME] [34] "
-" Msg[34] Time: [34] %d "
 
 " M07"
 " G00 [XH] [YH]"
@@ -281,7 +281,7 @@ begin FOOTER
 " M05 M09 (Shutdown spindle/coolant)"
 " Msg[34] Going to Machine Home [34] "
 " G28 ( Move to Machine Home )"
-" Msg[34] Machine Home reached [34] "
+" Msg [34]Machine Home reached [34] "
 " LogMsg %d [34] TIME-Program: [TP_FILENAME] Finished [34] "
 " M30 "
 "%"
